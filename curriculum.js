@@ -16,22 +16,39 @@ function copyToClipboard(text) {
     document.execCommand('copy');
     document.body.removeChild(tempInput);
 }
-// Obtenim totes les targetes interactives
 const flipCards = document.querySelectorAll('.flip-card');
 
+// Variable per controlar el retard
+const flipDelay = 1000; // Retard en milisegons (1 segon)
+
 flipCards.forEach(card => {
-    card.addEventListener('mouseout', function() {
-        // Comprovar si la targeta ja ha estat girada
-        if (card.getAttribute('data-flipped') === 'false') {
-            // Afegir la classe 'flipped' per girar la targeta
+    // Afegir l'esdeveniment 'mouseout' per girar la targeta
+    card.addEventListener('mouseover', function() {
+        // Comprovem si la targeta no està girada i no estem en retard
+        if (card.getAttribute('data-flipped') === 'false' && !card.dataset.flipping) {
+            card.dataset.flipping = 'true'; // Bloquegem el gir
             card.classList.add('flipped');
             card.setAttribute('data-flipped', 'true');
+            
+            // Afegir un retard per desbloquejar
+            setTimeout(() => {
+                delete card.dataset.flipping; // Desbloquegem el gir després del retard
+            }, flipDelay);
         }
-        else {
-            // Afegir la classe 'flipped' per girar la targeta
+    });
+
+    // Afegir l'esdeveniment 'click' per revertir el gir
+    card.addEventListener('click', function() {
+        // Tornem a girar la targeta si ja ha estat girada
+        if (card.getAttribute('data-flipped') === 'true' && !card.dataset.flipping) {
             card.classList.remove('flipped');
             card.setAttribute('data-flipped', 'false');
+            card.dataset.flipping = 'true'; // Bloquegem el gir en tornar
+            
+            // Afegir un retard per desbloquejar
+            setTimeout(() => {
+                delete card.dataset.flipping; // Desbloquegem el gir després del retard
+            }, flipDelay);
         }
     });
 });
-
