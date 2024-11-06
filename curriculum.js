@@ -52,3 +52,7 @@ flipCards.forEach(card => {
         }
     });
 });
+
+document.getElementById('scroll-to-content').addEventListener('click', function() {
+    document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+});

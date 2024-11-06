@@ -5,42 +5,76 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
+    padding: 0px;
+    scroll-behavior: smooth;
 }
 
 /* Capçalera */
 .header {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #23272A;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
 }
 
 .header .photo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
+/* Flecha animada en el borde inferior para hacer scroll */
+.scroll-arrow {
+    font-size: 2.5rem;
+    color: #007BFF;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+}
 
+/* Animación de la flecha */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
 /* Contingut principal amb targetes interactives */
-.content {
+.content-container {
+    background-color: #d3d3d3; /* Color de los márgenes laterales */
+    padding: 0 40px; /* Ajusta el ancho del margen */
+    height: 90vh;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    background-color: #f4f4f4; /* Color de fondo del contenido de las cartas */
+    height: 90%; /* Ajusta la altura del contenido para que no ocupe todo el espacio */
+    width: 100%; /* Ancho completo dentro del contenedor */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: 1fr 1fr; /* Dos filas */
+    gap: 20px; /* Espacio entre las cartas */
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 23%;
+    width: 90%; /* Ancho ajustado para que las cartas se adapten mejor al cuadrado */
+    height: 90%; /* Altura ajustada */
     perspective: 1000px;
 }
 
