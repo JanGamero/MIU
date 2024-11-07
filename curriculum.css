@@ -7,8 +7,8 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F1F7CD; /* Light yellow for body background */
+    color: #403A26; /* Dark brown for text color */
     padding: 0px;
     scroll-behavior: smooth;
 }
@@ -19,8 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #23272A;
-    color: white;
+    background-color: #81876C; /* Greyish green for header */
+    color: #F1F7CD; /* Light yellow text color */
     flex-direction: column;
     position: relative;
 }
@@ -30,10 +30,11 @@ body {
     height: 200px;
     border-radius: 50%;
 }
+
 /* Flecha animada en el borde inferior para hacer scroll */
 .scroll-arrow {
     font-size: 2.5rem;
-    color: #007BFF;
+    color: #403A26; /* Dark brown for scroll arrow */
     position: absolute;
     bottom: 20px;
     cursor: pointer;
@@ -49,23 +50,25 @@ body {
         transform: translateY(10px);
     }
 }
+
 /* Contingut principal amb targetes interactives */
 .content-container {
-    background-color: #d3d3d3; /* Color de los márgenes laterales */
-    padding: 0 40px; /* Ajusta el ancho del margen */
+    background-color: #D3F7CD; /* Light mint green for content container */
+    padding: 0 40px;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .content {
-    background-color: #f4f4f4; /* Color de fondo del contenido de las cartas */
-    height: 90%; /* Ajusta la altura del contenido para que no ocupe todo el espacio */
-    width: 100%; /* Ancho completo dentro del contenedor */
+    background-color: #F1F7CD; /* Background color to match the body */
+    height: 90%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
-    grid-template-rows: 1fr 1fr; /* Dos filas */
-    gap: 20px; /* Espacio entre las cartas */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     justify-items: center;
     align-items: center;
     padding: 20px;
@@ -73,8 +76,8 @@ body {
 
 .flip-card {
     background-color: transparent;
-    width: 90%; /* Ancho ajustado para que las cartas se adapten mejor al cuadrado */
-    height: 90%; /* Altura ajustada */
+    width: 90%;
+    height: 90%;
     perspective: 1000px;
 }
 
@@ -100,13 +103,13 @@ body {
 }
 
 .flip-card-front {
-    background-color: white;
-    color: #333;
+    background-color: #B5F7CD; /* Mint green for flip card front */
+    color: #403A26; /* Dark brown for text */
 }
 
 .flip-card-back {
-    background-color: #007BFF;
-    color: white;
+    background-color: #403A26; /* Dark brown for flip card back */
+    color: #F1F7CD; /* Light yellow for text */
     transform: rotateY(180deg);
 }
 
@@ -139,8 +142,8 @@ body {
     top: 50%;
     left: 50px;
     transform: translateY(-50%);
-    background-color: #007BFF;
-    color: white;
+    background-color: #81876C; /* Greyish green for tooltip */
+    color: #F1F7CD; /* Light yellow text */
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
