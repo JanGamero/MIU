@@ -8,7 +8,7 @@ This project involves developing a web page to display my Curriculum Vitae. The 
 ### User Profile
 The target user for this site is likely a recruiter or collaborator interested in learning more about my skills and professional experience. This user profile expects to find clear and straightforward information about my personal details, education, work experience, and technical skills, presented in a visually appealing and interactive format.
 
-### Information Architectur
+### Architecture
 The website is organized as a single page with the following main sections:
 1. **Header**: Introduction with my name and profile picture, accompanied by a scroll-down button.
 2. **Professional Profile**: A section describing my professional profile, key skills, and goals.
