@@ -34,5 +34,5 @@ For the visual design, a soft, professional color palette was chosen, including 
 [https://www.figma.com/design/3sHOj1Y5mpS21N9cGV6saj/Untitled?node-id=0-1&t=9U3sub21mlHN3KA9-1](#)
 
 ### Link to CV
-[https://www.figma.com/design/3sHOj1Y5mpS21N9cGV6saj/Untitled?node-id=0-1&t=9U3sub21mlHN3KA9-1](#)
+[https://jangamero.github.io/MIU/](#)
 
