@@ -7,15 +7,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 2;
-    background-color: #F1F7CD; /* Primary color: Light yellow for body background */
-    color: #403A26; /* Dark brown for text color */
-    padding: 0px;
+    background-color: #F1F7CD;
+    color: #403A26;
     scroll-behavior: smooth;
 }
 
-/* Header */
-
-.header h1{
+.header h1 {
     font-size: 100px;
 }
 
@@ -24,31 +21,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #B5F7CD; /* Secondary color 1: Mint green for header */
-    color: #403A26; /* Dark brown text color for contrast */
+    background-color: #B5F7CD;
+    color: #403A26;
     flex-direction: column;
     position: relative;
 }
+
 .header .photo {
     padding: 50px;
 }
+
 .header .photo img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
 }
 
-/* Animated Scroll Arrow */
 .scroll-arrow {
     font-size: 2.5rem;
-    color: #403A26; /* Dark brown for scroll arrow */
+    color: #403A26;
     position: absolute;
     bottom: 20px;
     cursor: pointer;
     animation: bounce 1s infinite alternate;
 }
 
-/* Bounce Animation for Arrow */
 @keyframes bounce {
     from {
         transform: translateY(0);
@@ -58,9 +55,8 @@ body {
     }
 }
 
-/* Main Content with Interactive Cards */
 .content-container {
-    background-color: #D3F7CD; /* Secondary color 2: Light mint green for content container */
+    background-color: #D3F7CD;
     padding: 0 40px;
     height: 90vh;
     display: flex;
@@ -69,7 +65,7 @@ body {
 }
 
 .content {
-    background-color: #F1F7CD; /* Match primary background color */
+    background-color: #F1F7CD;
     height: 90%;
     width: 100%;
     display: grid;
@@ -82,7 +78,6 @@ body {
 }
 
 .flip-card {
-    background-color: transparent;
     width: 90%;
     height: 90%;
     perspective: 1000px;
@@ -109,25 +104,23 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.flip-card-front h2{
+.flip-card-front h2 {
     font-size: 50px;
     padding: 55px;
 }
 
 .flip-card-front {
-    background-color: #B5F7CD; /* Secondary color 1: Mint green for flip card front */
-    color: #403A26; /* Dark brown text color */
-    
+    background-color: #B5F7CD;
+    color: #403A26;
 }
 
 .flip-card-back {
-    background-color: #403A26; /* Dark brown for flip card back */
-    color: #F1F7CD; /* Light yellow text for contrast */
+    background-color: #403A26;
+    color: #F1F7CD;
     transform: rotateY(180deg);
     cursor: pointer;
 }
 
-/* Fixed Icons */
 .fixed-icons {
     position: fixed;
     top: 50%;
@@ -156,8 +149,8 @@ body {
     top: 50%;
     left: 50px;
     transform: translateY(-50%);
-    background-color: #81876C; /* Accent color 2: Greyish green for tooltip */
-    color: #F1F7CD; /* Light yellow text */
+    background-color: #81876C;
+    color: #F1F7CD;
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -168,7 +161,6 @@ body {
     display: block;
 }
 
-/* Prevent Card Flip Reversion */
 .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
