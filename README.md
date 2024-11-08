@@ -24,11 +24,11 @@ For the visual design, a soft, professional color palette was chosen, including 
 
 **Main colors used:**
 
-- ![#F1F7CD](https://via.placeholder.com/15/F1F7CD/000000?text=+) `#F1F7CD`: Light yellow for the background
-- ![#D3F7CD](https://via.placeholder.com/15/D3F7CD/000000?text=+) `#D3F7CD`: Light mint green for sections and cards
-- ![#B5F7CD](https://via.placeholder.com/15/B5F7CD/000000?text=+) `#B5F7CD`: Mint green for header and front of cards
-- ![#403A26](https://via.placeholder.com/15/403A26/000000?text=+) `#403A26`: Dark brown for text and details
-- ![#81876C](https://via.placeholder.com/15/81876C/000000?text=+) `#81876C`: Grayish green for tooltips and additional details
+- ![#F1F7CD](https://placehold.co/15x15/F1F7CD/F1F7CD.png) `#F1F7CD`: Light yellow for the background
+- ![#D3F7CD](https://placehold.co/15x15/D3F7CD/D3F7CD.png) `#D3F7CD`: Light mint green for sections and cards
+- ![#B5F7CD](https://placehold.co/15x15/B5F7CD/B5F7CD.png) `#B5F7CD`: Mint green for header and front of cards
+- ![#403A26](https://placehold.co/15x15/403A26/403A26.png) `#403A26`: Dark brown for text and details
+- ![#81876C](https://placehold.co/15x15/81876C/81876C.png) `#81876C`: Grayish green for tooltips and additional details
 
 ### Link to Figma Project
 [Link to the Figma project](#) *(Replace with the actual link to the Figma project)*
