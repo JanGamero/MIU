@@ -30,9 +30,8 @@ For the visual design, a soft, professional color palette was chosen, including 
 - ![#403A26](https://placehold.co/15x15/403A26/403A26.png) `#403A26`: Dark brown for text and details
 - ![#81876C](https://placehold.co/15x15/81876C/81876C.png) `#81876C`: Grayish green for tooltips and additional details
 
-### Link to Figma Project
-[https://www.figma.com/design/3sHOj1Y5mpS21N9cGV6saj/Untitled?node-id=0-1&t=9U3sub21mlHN3KA9-1](#)
+### Development
+[Link to Figma](https://www.figma.com/design/3sHOj1Y5mpS21N9cGV6saj/Untitled?node-id=0-1&t=9U3sub21mlHN3KA9-1)
 
-### Link to CV
-[https://jangamero.github.io/MIU/](#)
+[Link to CV](https://jangamero.github.io/MIU/)
 
